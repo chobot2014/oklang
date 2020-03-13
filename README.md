@@ -60,8 +60,7 @@ OK!
 // you can have an iife
 OK?
     const<string> randomString = (
-     (
-        {<string>thing}={
+        ({<string>thing}={
            let<string> thingToGiveBack = "the thing is " + thing;
         }=>{ 
            thingOut: thingToGiveBack
@@ -75,8 +74,7 @@ OK?{
     <string> personName
 }
     let<string> someMessage = "hello " + personName;
-    // function calls are not positional
-    this.display{message: someMessage};
+    display{message: someMessage};
 
     export {
         messageGiven: someMessage
