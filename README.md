@@ -57,9 +57,14 @@ OK!
 ```
 // you can have an iife
 OK?
-    const<string> randomString = (({<string>thing}={
-        let<string> thingToGiveBack = "the thing is " + thing;
-    }=>{ thingOut: thingToGiveBack}){thing: "apple"}.thingOut);
+    const<string> randomString = (
+     (
+        {<string>thing}={
+           let<string> thingToGiveBack = "the thing is " + thing;
+        }=>{ 
+           thingOut: thingToGiveBack
+        }){thing: "apple"}
+     ).thingOut;
 OK!
 ```
 ```
