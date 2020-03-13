@@ -1,6 +1,8 @@
 # oklang
 it's gonna be ok
 
+Prealpha compiler will target arm
+
 -- John Chohon, 2020 --
 
 module syntax
