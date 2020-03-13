@@ -1,7 +1,7 @@
 # oklang
 it's gonna be ok
 
-Prealpha compiler will target arm
+Prealpha compiler will target wasm
 
 -- John Chohon, 2020 --
 
