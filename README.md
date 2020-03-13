@@ -8,10 +8,12 @@ modules are imported as objects
 module syntax
 
 base module syntax
+```
 ok?
     //some code
 ok!
-
+```
+```
 ok?
     // we don't have positional parameters
     // functions are called with object syntax
@@ -19,22 +21,26 @@ ok?
     // print hello world to the user
     display{message: "hello world'};
 ok!
-
+```
+```
 // you can declare objects
 ok?
     let<{something: string}> myObject = {something: "blah"}; 
 ok!
-
+```
+```
 // you can have dynamic types if you don't mind potential runtime errors
 ok?
     let myObject<dynamic> = JSON.parse{in: "{"someKey": "someValue"}"};
 ok!
-
+```
+```
 // you can declare arrays
 ok?
     let<[string]> someListOfStrings= ["blah1", "blah2"];
 ok!
-
+```
+```
 // you can declare functions
 // functions are objects.
 // take an object and return an object
@@ -46,7 +52,8 @@ OK?
 
     someOtherFunction{};
 OK!
-
+```
+```
 // you can have an iife
 OK?
     const<string> randomString = (({<string>thing}={
@@ -56,7 +63,8 @@ OK?
         };
     }=>{<string>thingOut}){thing: "apple"}.thingOut);
 OK!
-
+```
+```
 // modules can have imports and exports
 OK?{
     <string> personName
@@ -71,13 +79,14 @@ OK?{
 OK!{
     <string>messageGiven
 }
-
+```
+```
 OK?
     <string>message = "something"; 
     this.display{message};
 OK!
-
-
+```
+```
 // modules can have names but must explicitly put the in type
 ok?ModuleWithAnExportedFunction{}
     const<{}={}=>{}> someFunc = {}={
@@ -90,3 +99,4 @@ ok?ModuleWithAnExportedFunction{}
 ok!{
     <{}={}=>{}>exportedFunction
 }
+```
