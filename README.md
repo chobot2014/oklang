@@ -5,6 +5,8 @@ it's gonna be ok
 
 module syntax
 
+Modules do run code outside of a function when imported
+
 base module syntax
 ```
 ok?
