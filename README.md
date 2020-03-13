@@ -59,9 +59,8 @@ OK!
 OK?
     const<string> randomString = (({<string>thing}={
         let<string> thingToGiveBack = "the thing is " + thing;
-    }=>{
-thingOut: thingToGiveBack
-}){thing: "apple"}.thingOut);
+     }=>{ thingOut: thingToGiveBack
+    }){thing: "apple"}.thingOut);
 OK!
 ```
 ```
@@ -73,7 +72,7 @@ OK?{
     // function calls are not positional
     this.display{message: someMessage};
 
-    return {
+    export {
         messageGiven: someMessage
     };
 OK!{
@@ -93,7 +92,7 @@ ok?ModuleWithAnExportedFunction{}
         let<string> something = "blah";
     }=>{};
 
-    return{
+    export {
         exportedFunction: something;
     }
 ok!{
