@@ -59,10 +59,9 @@ OK!
 OK?
     const<string> randomString = (({<string>thing}={
         let<string> thingToGiveBack = "the thing is " + thing;
-        return{
-            thingOut: thingToGiveBack
-        };
-    }=>{<string>thingOut}){thing: "apple"}.thingOut);
+    }=>{
+thingOut: thingToGiveBack
+}){thing: "apple"}.thingOut);
 OK!
 ```
 ```
