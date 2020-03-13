@@ -45,10 +45,11 @@ ok!
 // functions are objects.
 // take an object and return an object
 OK?    
-    // parameter object type
+    // IN_TYPE={}=>OUT_TYPE
     const<{}={}=>{}> someOtherFunction = {}={
         this.display{message: "hey there user, I'm inside a function"};
     }=>{};
+
 
     someOtherFunction{};
 OK!
