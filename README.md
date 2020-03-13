@@ -29,7 +29,7 @@ ok!
 ```
 // you can have dynamic types if you don't mind potential runtime errors
 ok?
-    let myObject = JSON.parse{in: '{"someKey": "someValue"}'};
+    let myObject = someJsonDeserializer{in: '{"someKey": "someValue"}'};
 ok!
 ```
 ```
