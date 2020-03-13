@@ -3,9 +3,6 @@ it's gonna be ok
 
 -- John Chohon, 2020 --
 
-modules are imported as objects,
-Files don't matter, only modules
-
 module syntax
 
 base module syntax
